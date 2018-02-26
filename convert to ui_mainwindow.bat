@@ -1,0 +1,1 @@
+pyuic4 -o %cd%\ui_mainwindow.py %cd%\MainWindow.ui

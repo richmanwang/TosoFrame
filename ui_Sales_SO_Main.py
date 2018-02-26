@@ -1,0 +1,152 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'D:\TosoProgram\TosoFrame\TosoFrame\res_Sales\Sales_SO_Main.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_Sales_SO_Main(object):
+    def setupUi(self, Sales_SO_Main):
+        Sales_SO_Main.setObjectName(_fromUtf8("Sales_SO_Main"))
+        Sales_SO_Main.resize(1418, 822)
+        self.label_2 = QtGui.QLabel(Sales_SO_Main)
+        self.label_2.setGeometry(QtCore.QRect(520, 10, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_2.setFont(font)
+        self.label_2.setWordWrap(True)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.groupBox = QtGui.QGroupBox(Sales_SO_Main)
+        self.groupBox.setGeometry(QtCore.QRect(20, 20, 461, 151))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.groupBox.setFont(font)
+        self.groupBox.setObjectName(_fromUtf8("groupBox"))
+        self.btn_query = QtGui.QPushButton(self.groupBox)
+        self.btn_query.setGeometry(QtCore.QRect(300, 30, 91, 61))
+        self.btn_query.setObjectName(_fromUtf8("btn_query"))
+        self.label_6 = QtGui.QLabel(self.groupBox)
+        self.label_6.setGeometry(QtCore.QRect(10, 120, 52, 20))
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.lineEdit_socode = QtGui.QLineEdit(self.groupBox)
+        self.lineEdit_socode.setEnabled(True)
+        self.lineEdit_socode.setGeometry(QtCore.QRect(70, 120, 101, 20))
+        self.lineEdit_socode.setObjectName(_fromUtf8("lineEdit_socode"))
+        self.line = QtGui.QFrame(self.groupBox)
+        self.line.setGeometry(QtCore.QRect(10, 100, 441, 16))
+        self.line.setFrameShape(QtGui.QFrame.HLine)
+        self.line.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line.setObjectName(_fromUtf8("line"))
+        self.btn_SelectCus = QtGui.QPushButton(self.groupBox)
+        self.btn_SelectCus.setGeometry(QtCore.QRect(260, 70, 31, 20))
+        self.btn_SelectCus.setObjectName(_fromUtf8("btn_SelectCus"))
+        self.label_5 = QtGui.QLabel(self.groupBox)
+        self.label_5.setGeometry(QtCore.QRect(10, 70, 52, 20))
+        self.label_5.setObjectName(_fromUtf8("label_5"))
+        self.lineEdit_cusCode = QtGui.QLineEdit(self.groupBox)
+        self.lineEdit_cusCode.setEnabled(True)
+        self.lineEdit_cusCode.setGeometry(QtCore.QRect(69, 70, 191, 20))
+        self.lineEdit_cusCode.setObjectName(_fromUtf8("lineEdit_cusCode"))
+        self.dateEdit_start = QtGui.QDateEdit(self.groupBox)
+        self.dateEdit_start.setGeometry(QtCore.QRect(45, 30, 109, 20))
+        self.dateEdit_start.setReadOnly(False)
+        self.dateEdit_start.setObjectName(_fromUtf8("dateEdit_start"))
+        self.label_3 = QtGui.QLabel(self.groupBox)
+        self.label_3.setGeometry(QtCore.QRect(11, 30, 28, 20))
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.label_4 = QtGui.QLabel(self.groupBox)
+        self.label_4.setGeometry(QtCore.QRect(160, 30, 16, 20))
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.dateEdit_end = QtGui.QDateEdit(self.groupBox)
+        self.dateEdit_end.setGeometry(QtCore.QRect(181, 30, 109, 20))
+        self.dateEdit_end.setObjectName(_fromUtf8("dateEdit_end"))
+        self.btn_query_today = QtGui.QPushButton(self.groupBox)
+        self.btn_query_today.setGeometry(QtCore.QRect(400, 30, 51, 61))
+        self.btn_query_today.setObjectName(_fromUtf8("btn_query_today"))
+        self.btn_print = QtGui.QPushButton(Sales_SO_Main)
+        self.btn_print.setGeometry(QtCore.QRect(700, 30, 91, 61))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.btn_print.setFont(font)
+        self.btn_print.setObjectName(_fromUtf8("btn_print"))
+        self.checkBox = QtGui.QCheckBox(Sales_SO_Main)
+        self.checkBox.setGeometry(QtCore.QRect(40, 180, 81, 23))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.checkBox.setFont(font)
+        self.checkBox.setObjectName(_fromUtf8("checkBox"))
+        self.list_template = QtGui.QListWidget(Sales_SO_Main)
+        self.list_template.setGeometry(QtCore.QRect(520, 30, 171, 131))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.list_template.setFont(font)
+        self.list_template.setObjectName(_fromUtf8("list_template"))
+        self.tableView = QtGui.QTableView(Sales_SO_Main)
+        self.tableView.setGeometry(QtCore.QRect(20, 210, 1381, 591))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.tableView.setFont(font)
+        self.tableView.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
+        self.tableView.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
+        self.tableView.setAlternatingRowColors(True)
+        self.tableView.setObjectName(_fromUtf8("tableView"))
+        self.btn_unprinted = QtGui.QPushButton(Sales_SO_Main)
+        self.btn_unprinted.setGeometry(QtCore.QRect(150, 180, 101, 23))
+        self.btn_unprinted.setObjectName(_fromUtf8("btn_unprinted"))
+        self.btn_output_excel = QtGui.QPushButton(Sales_SO_Main)
+        self.btn_output_excel.setGeometry(QtCore.QRect(260, 180, 101, 23))
+        self.btn_output_excel.setObjectName(_fromUtf8("btn_output_excel"))
+        self.checkBox_printlog = QtGui.QCheckBox(Sales_SO_Main)
+        self.checkBox_printlog.setGeometry(QtCore.QRect(520, 160, 111, 23))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.checkBox_printlog.setFont(font)
+        self.checkBox_printlog.setChecked(True)
+        self.checkBox_printlog.setObjectName(_fromUtf8("checkBox_printlog"))
+        self.checkBox_actualprint = QtGui.QCheckBox(Sales_SO_Main)
+        self.checkBox_actualprint.setGeometry(QtCore.QRect(520, 180, 111, 23))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.checkBox_actualprint.setFont(font)
+        self.checkBox_actualprint.setChecked(True)
+        self.checkBox_actualprint.setObjectName(_fromUtf8("checkBox_actualprint"))
+
+        self.retranslateUi(Sales_SO_Main)
+        QtCore.QMetaObject.connectSlotsByName(Sales_SO_Main)
+
+    def retranslateUi(self, Sales_SO_Main):
+        Sales_SO_Main.setWindowTitle(_translate("Sales_SO_Main", "Form", None))
+        self.label_2.setText(_translate("Sales_SO_Main", "生产单打印模板", None))
+        self.groupBox.setTitle(_translate("Sales_SO_Main", "提取服务器数据", None))
+        self.btn_query.setText(_translate("Sales_SO_Main", "查询", None))
+        self.label_6.setText(_translate("Sales_SO_Main", "订单号", None))
+        self.btn_SelectCus.setText(_translate("Sales_SO_Main", "...", None))
+        self.label_5.setText(_translate("Sales_SO_Main", "客户编码", None))
+        self.label_3.setText(_translate("Sales_SO_Main", "From", None))
+        self.label_4.setText(_translate("Sales_SO_Main", "To", None))
+        self.btn_query_today.setText(_translate("Sales_SO_Main", "今日\n"
+"订单", None))
+        self.btn_print.setText(_translate("Sales_SO_Main", "打印", None))
+        self.checkBox.setText(_translate("Sales_SO_Main", "全选/全消", None))
+        self.btn_unprinted.setText(_translate("Sales_SO_Main", "勾选未打印订单", None))
+        self.btn_output_excel.setText(_translate("Sales_SO_Main", "导出Excel", None))
+        self.checkBox_printlog.setText(_translate("Sales_SO_Main", "记录打印时间", None))
+        self.checkBox_actualprint.setText(_translate("Sales_SO_Main", "实际打印纸张", None))
+
